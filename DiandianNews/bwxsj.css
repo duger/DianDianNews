@@ -1,0 +1,15 @@
+/*
+Offical Style for SupeSite 7.0 default
+(C) 2001-2008 Comsenz Inc.
+
+/*============================================= news detail pages style  */
+h3, h4, h5{strong:font-weight:700;}
+
+#article { padding-top:3px; }
+	#article h1 { margin:6px 0px 30px 0px; text-align:center; font-size:1.33em; }
+	#article_body { font:14px; line-height:30px; }
+	#article_body p { margin-left:15px; margin-right:15px; margin-bottom:6px; text-indent:2em; }
+	#article_body p  a img{ position:relative; left:-2em; }
+	#article_body strong { font-weight:700;}
+
+#foot_bar {display:none;}	
