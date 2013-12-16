@@ -1059,14 +1059,14 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Connection",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Core",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/GooglePlusSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/Pinterest.embeddedframework",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/QQConnectSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/RenRenSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/UI",
+					"$(SRCROOT)/DiandianNews/Connection",
+					"$(SRCROOT)/DiandianNews/Core",
+					"$(SRCROOT)/DiandianNews/Extend/GooglePlusSDK",
+					"$(SRCROOT)/DiandianNews/Extend/Pinterest.embeddedframework",
+					"$(SRCROOT)/DiandianNews/Extend/QQConnectSDK",
+					"$(SRCROOT)/DiandianNews/Extend/RenRenSDK",
+					"$(SRCROOT)/DiandianNews",
+					"$(SRCROOT)/DiandianNews/UI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiandianNews/DiandianNews-Prefix.pch";
@@ -1074,9 +1074,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/SinaWeiboSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/TencentWeiboSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/WeChatSDK",
+					"$(SRCROOT)/DiandianNews/Extend/SinaWeiboSDK",
+					"$(SRCROOT)/DiandianNews/Extend/TencentWeiboSDK",
+					"$(SRCROOT)/DiandianNews/Extend/WeChatSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1092,14 +1092,14 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Connection",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Core",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/GooglePlusSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/Pinterest.embeddedframework",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/QQConnectSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/RenRenSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/UI",
+					"$(SRCROOT)/DiandianNews/Connection",
+					"$(SRCROOT)/DiandianNews/Core",
+					"$(SRCROOT)/DiandianNews/Extend/GooglePlusSDK",
+					"$(SRCROOT)/DiandianNews/Extend/Pinterest.embeddedframework",
+					"$(SRCROOT)/DiandianNews/Extend/QQConnectSDK",
+					"$(SRCROOT)/DiandianNews/Extend/RenRenSDK",
+					"$(SRCROOT)/DiandianNews",
+					"$(SRCROOT)/DiandianNews/UI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiandianNews/DiandianNews-Prefix.pch";
@@ -1107,9 +1107,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/SinaWeiboSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/TencentWeiboSDK",
-					"/Users/duger/Desktop/项目二新闻/DiandianNews/DiandianNews/DiandianNews/Extend/WeChatSDK",
+					"$(SRCROOT)/DiandianNews/Extend/SinaWeiboSDK",
+					"$(SRCROOT)/DiandianNews/Extend/TencentWeiboSDK",
+					"$(SRCROOT)/DiandianNews/Extend/WeChatSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;

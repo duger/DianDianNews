@@ -41,12 +41,12 @@
     self.theCollectionView.delegate = self;
     self.theCollectionView.collectionViewDataSource = self;
     self.theCollectionView.collectionViewDelegate = self;
-    theCollectionView.backgroundColor = [UIColor purpleColor];
+    theCollectionView.backgroundColor = [UIColor colorWithRed:134 green:202 blue:182 alpha:1];
     theCollectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin;
     theCollectionView.numColsLandscape = 4;
     theCollectionView.numColsPortrait = 3;
-    theCollectionView.backgroundColor = [UIColor blueColor];
-    self.centerView.backgroundColor = [UIColor redColor];
+
+    self.centerView.backgroundColor = [UIColor clearColor];
     self.centerView.clipsToBounds = YES;
     [self.centerView addSubview:theCollectionView];
     [theCollectionView release];
@@ -104,7 +104,7 @@
     NSDictionary *news = [self.newsArray objectAtIndex:index];
     [cellView collectionView:self.theCollectionView fillCellWithObject:news atIndex:index];
     [cellView.image setImageWithURL:[news objectForKey:@"picUrl"] placeholderImage:[UIImage imageNamed:@"placeHolderImage.jpg"]];
-    cellView.backgroundColor = [UIColor redColor];
+    cellView.backgroundColor = [UIColor colorWithRed:162 green:215 blue:212 alpha:1];
     return cellView;
 }
 

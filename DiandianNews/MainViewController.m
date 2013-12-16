@@ -46,7 +46,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self menuSetOrReset];
-    self.centerView.backgroundColor = [UIColor purpleColor];
+    self.centerView.backgroundColor = [UIColor colorWithRed:82 green:170 blue:93 alpha:1];
 }
 
 
@@ -90,7 +90,7 @@
     for (NSString *title in columnsArr) {
        
         Columns *menuItem = [menuView createMenuItem];
-        menuView.backgroundColor = [UIColor darkGrayColor];
+        menuView.backgroundColor = [UIColor colorWithRed:82 green:170 blue:93 alpha:1];
         menuItem.backgroundColor = [UIColor purpleColor];
         menuItem.delegate = self;
         [menuItem addTitle:title];
@@ -162,7 +162,7 @@
     NSLog(@"出现了");
     PreViewViewController *preViewVC = [[PreViewViewController alloc]initWithNibName:@"PreViewViewController" bundle:[NSBundle mainBundle]];
     preViewVC.currentColumn = menuItem.columnIndex;
-    preViewVC.view.backgroundColor = [UIColor grayColor];
+    preViewVC.view.backgroundColor = [UIColor colorWithRed:134 green:202 blue:182 alpha:1];
     [self flipToViewController:preViewVC fromView:menuItem withCompletion:nil];
     [preViewVC release];
     
