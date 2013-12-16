@@ -33,7 +33,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor colorWithRed:134/255.0 green:202/255.0 blue:182/255.0 alpha:1];
     columns = [[NSMutableArray arrayWithArray:[[NewsManager defaultManager]getAllColumnDicFromPlist] ]retain];
 }
 
@@ -65,11 +65,11 @@
         [chooseButton setImage:seletImage forState:UIControlStateNormal];
     
     
-    chooseButton.frame = CGRectMake(200, 20, 50, 50);
+    chooseButton.frame = CGRectMake(195, 20, 40, 40);
     cell.accessoryView = chooseButton;
     [chooseButton addTarget:self action:@selector(didClickChooseButton:forEvent:) forControlEvents:UIControlEventTouchUpInside];
 
-    cell.backgroundColor = [UIColor lightTextColor];
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }

@@ -18,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0p-yn-BNi">
-                    <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0p-yn-BNi">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
@@ -31,9 +31,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-lO-t1j">
-                            <rect key="frame" x="20" y="0.0" width="43" height="30"/>
+                            <rect key="frame" x="20" y="0.0" width="86" height="48"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="返回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -47,18 +49,18 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-Pb-Pm8">
-                    <rect key="frame" x="0.0" y="72" width="768" height="876"/>
+                    <rect key="frame" x="0.0" y="52" width="768" height="876"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.70980392156862748" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Q0p-yn-BNi" firstAttribute="top" secondItem="2" secondAttribute="top" id="6sD-qU-UIo"/>
                 <constraint firstAttribute="trailing" secondItem="gEQ-Pb-Pm8" secondAttribute="trailing" id="Fcx-s8-eai"/>
                 <constraint firstItem="gEQ-Pb-Pm8" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Hp8-SE-bHX"/>
                 <constraint firstAttribute="trailing" secondItem="Q0p-yn-BNi" secondAttribute="trailing" id="KIv-5F-yt8"/>
-                <constraint firstItem="OPk-M6-qW2" firstAttribute="top" secondItem="gEQ-Pb-Pm8" secondAttribute="bottom" constant="40" id="QcU-nS-8Bz"/>
+                <constraint firstItem="OPk-M6-qW2" firstAttribute="top" secondItem="gEQ-Pb-Pm8" secondAttribute="bottom" constant="20" id="QcU-nS-8Bz"/>
                 <constraint firstItem="gEQ-Pb-Pm8" firstAttribute="top" secondItem="Q0p-yn-BNi" secondAttribute="bottom" constant="20" id="USw-0V-CoA"/>
                 <constraint firstItem="OPk-M6-qW2" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="WZ2-jz-uvA"/>
                 <constraint firstAttribute="trailing" secondItem="OPk-M6-qW2" secondAttribute="trailing" id="YBN-p3-KcE"/>
