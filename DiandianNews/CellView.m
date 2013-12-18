@@ -75,6 +75,7 @@
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string];
     
     CGRect labelSize = [attributedString boundingRectWithSize:max options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    [attributedString release];
     labelSize.size.height *= 2;
     //    [shareLabel setFrame:labelsize];
     return labelSize;

@@ -60,6 +60,7 @@ static NewsManager *s_NewManager = nil;
     self.selectedColumns = nil;
     self.newsArr = nil;
     self.delegate = nil;
+
     [super dealloc];
 }
 
@@ -219,6 +220,7 @@ static NewsManager *s_NewManager = nil;
     }
     NSLog(@"%@",resultArr);
     [resultArr writeToFile:kColumnPath atomically:YES];
+    [resultArr release];
     
 }
 
@@ -234,6 +236,7 @@ static NewsManager *s_NewManager = nil;
         [resultArr addObject:item];
     }
     [resultArr writeToFile:kColumnPath atomically:YES];
+    [resultArr release];
     [[NSNotificationCenter defaultCenter]postNotificationName:@"changeColumns" object:nil];
 }
 
@@ -297,8 +300,9 @@ static NewsManager *s_NewManager = nil;
     
     
     NSDictionary *resultDic = [[NSDictionary alloc]initWithContentsOfFile:kNewsPlistPath];
-    NSArray *newsArr = [resultDic objectForKey:[[NSNumber numberWithInteger:column]stringValue]];
-    
+    NSArray *newsArr = [[NSArray alloc]initWithArray:[resultDic objectForKey:[[NSNumber numberWithInteger:column]stringValue]]];
+
+    [resultDic release];
     
     return [newsArr autorelease];
     
@@ -338,7 +342,7 @@ static NewsManager *s_NewManager = nil;
     }
     dispatch_group_notify(group, queue, ^{
         if (isChanged) {
-            [self writeIntoNewsPlist:[tempNewsArr mutableCopy] andColumn:column];
+            [self writeIntoNewsPlist:tempNewsArr andColumn:column];
             
             
         }

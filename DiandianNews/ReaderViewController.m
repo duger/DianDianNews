@@ -121,7 +121,7 @@
     
     UIWebView *webView;
     if (view == nil) {
-        view = [[UIView alloc]initWithFrame:self.view.bounds];
+        view = [[[UIView alloc]initWithFrame:self.view.bounds]autorelease];
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
         webView.delegate = self;
