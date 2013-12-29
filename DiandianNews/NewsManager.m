@@ -304,7 +304,7 @@ static NewsManager *s_NewManager = nil;
 
     [resultDic release];
     
-    return [newsArr autorelease];
+    return newsArr;
     
     
 }

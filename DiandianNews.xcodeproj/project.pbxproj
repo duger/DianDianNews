@@ -14,6 +14,8 @@
 		8A5E66F0185627CC00370392 /* SwipeView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8A5E66EF185627CC00370392 /* SwipeView.podspec */; };
 		8A69A67218619A7D0001F983 /* CustomCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A69A67118619A7D0001F983 /* CustomCollectionCell.m */; };
 		8A69A67418619AB10001F983 /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A69A67318619AB10001F983 /* CustomCollectionCell.xib */; };
+		8A69A67818619DE40001F983 /* NewsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A69A67618619DE40001F983 /* NewsCollectionViewController.m */; };
+		8A69A67918619DE40001F983 /* NewsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A69A67718619DE40001F983 /* NewsCollectionViewController.xib */; };
 		8A6EBE13185B3E8A00B8ABC2 /* CopyConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6EBDDA185B3E8900B8ABC2 /* CopyConnection.framework */; };
 		8A6EBE14185B3E8A00B8ABC2 /* DouBanConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6EBDDB185B3E8900B8ABC2 /* DouBanConnection.framework */; };
 		8A6EBE15185B3E8A00B8ABC2 /* DropboxConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6EBDDC185B3E8A00B8ABC2 /* DropboxConnection.framework */; };
@@ -153,6 +155,9 @@
 		8A69A67018619A7D0001F983 /* CustomCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionCell.h; sourceTree = "<group>"; };
 		8A69A67118619A7D0001F983 /* CustomCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionCell.m; sourceTree = "<group>"; };
 		8A69A67318619AB10001F983 /* CustomCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
+		8A69A67518619DE40001F983 /* NewsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCollectionViewController.h; sourceTree = "<group>"; };
+		8A69A67618619DE40001F983 /* NewsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCollectionViewController.m; sourceTree = "<group>"; };
+		8A69A67718619DE40001F983 /* NewsCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCollectionViewController.xib; sourceTree = "<group>"; };
 		8A6EBDDA185B3E8900B8ABC2 /* CopyConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CopyConnection.framework; sourceTree = "<group>"; };
 		8A6EBDDB185B3E8900B8ABC2 /* DouBanConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DouBanConnection.framework; sourceTree = "<group>"; };
 		8A6EBDDC185B3E8A00B8ABC2 /* DropboxConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxConnection.framework; sourceTree = "<group>"; };
@@ -708,6 +713,9 @@
 				8A862EA0184ED73A00A4F85D /* PreViewViewController.h */,
 				8A862EA1184ED73A00A4F85D /* PreViewViewController.m */,
 				8AB469161850601400C9048C /* PreViewViewController.xib */,
+				8A69A67518619DE40001F983 /* NewsCollectionViewController.h */,
+				8A69A67618619DE40001F983 /* NewsCollectionViewController.m */,
+				8A69A67718619DE40001F983 /* NewsCollectionViewController.xib */,
 				8A69A67018619A7D0001F983 /* CustomCollectionCell.h */,
 				8A69A67118619A7D0001F983 /* CustomCollectionCell.m */,
 				8A69A67318619AB10001F983 /* CustomCollectionCell.xib */,
@@ -861,6 +869,7 @@
 				8AEA015B184DD8EE0033CA02 /* RightViewController.xib in Resources */,
 				8A6EBE1C185B3E8A00B8ABC2 /* InstapaperResource.bundle in Resources */,
 				8A6EBE64185B43E200B8ABC2 /* Icon@2x.png in Resources */,
+				8A69A67918619DE40001F983 /* NewsCollectionViewController.xib in Resources */,
 				8A6EBE5B185B3EF600B8ABC2 /* PinterestSDKResources.bundle in Resources */,
 				8AEA0159184DD8BF0033CA02 /* LeftViewController.xib in Resources */,
 				8A5E66F0185627CC00370392 /* SwipeView.podspec in Resources */,
@@ -931,6 +940,7 @@
 				8AB4691D1850791C00C9048C /* NSArray+Additon.m in Sources */,
 				8A69A67218619A7D0001F983 /* CustomCollectionCell.m in Sources */,
 				8AB8787F18501231001459BB /* PSCollectionViewCell.m in Sources */,
+				8A69A67818619DE40001F983 /* NewsCollectionViewController.m in Sources */,
 				8A862EC0184F340B00A4F85D /* UIView+CaptureImage.m in Sources */,
 				8A1167B3185181830095893E /* Columns+Additon.m in Sources */,
 				8AEA011B184DB1200033CA02 /* main.m in Sources */,

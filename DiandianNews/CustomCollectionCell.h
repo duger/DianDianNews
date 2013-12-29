@@ -13,4 +13,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *newsTitle;
 @property (retain, nonatomic) IBOutlet UILabel *newsSummary;
 
+
+-(void)collectionView:(UICollectionView *)collectionView fillCellWithObject:(id)object atIndex:(NSInteger)index;
 @end

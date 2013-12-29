@@ -12,6 +12,7 @@
 #import "PreViewViewController.h"
 #import "UIViewController+ADFlipTransition.h"
 #import "NewsManager.h"
+#import "NewsCollectionViewController.h"
 
 
 
@@ -163,8 +164,19 @@
     PreViewViewController *preViewVC = [[PreViewViewController alloc]initWithNibName:@"PreViewViewController" bundle:[NSBundle mainBundle]];
     preViewVC.currentColumn = menuItem.columnIndex;
     preViewVC.view.backgroundColor = [UIColor colorWithRed:134/255.0f green:202/255.0f blue:182/255.0f alpha:1];
-    [self flipToViewController:preViewVC fromView:menuItem withCompletion:nil];
-    [preViewVC release];
+    
+    
+    //
+    NewsCollectionViewController *newsVC = [[NewsCollectionViewController alloc]initWithNibName:@"NewsCollectionViewController" bundle:[NSBundle mainBundle]];
+
+    newsVC.currentColumn = menuItem.columnIndex;
+    newsVC.view.backgroundColor = [UIColor colorWithRed:134/255.0f green:202/255.0f blue:182/255.0f alpha:1];
+    
+    [self presentViewController:newsVC animated:YES completion:nil];
+//    [self flipToViewController:newsVC fromView:menuItem withCompletion:nil];
+    [newsVC release];
+
+
     
     NSDictionary *currentColumnDic = [self.selectedColumns objectAtIndex:menuItem.tag - 1];
     NSTimeInterval time = [((NSNumber *)[currentColumnDic objectForKey:@"lastUpdate"])doubleValue];
